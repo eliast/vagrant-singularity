@@ -1,0 +1,4 @@
+.vagrant
+*.sw*
+Berksfile.lock
+generated

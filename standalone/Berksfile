@@ -1,0 +1,9 @@
+site :opscode
+
+cookbook 'apt'
+cookbook 'mysql'
+cookbook 'ark', github: "eanrollings/ark"
+cookbook 'maven', github: "opscode-cookbooks/maven"
+cookbook 'mesos', github: "eliast/cookbook-mesos"
+cookbook 'singularity', github: "eliast/cookbook-singularity"
+
