@@ -30,6 +30,7 @@ It's so simple! It's time to get a cup of coffee because this may take some time
 
     $ cd standalone
     $ vagrant up
+    $ vagrant ssh -c 'mesos-start-cluster.sh'
 
 If everything went well, you can see mesos web UI on: <http://localhost:5050>
 
