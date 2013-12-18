@@ -12,7 +12,7 @@ The setup is provided by mesos chef cookbook.  Please see [everpeace/cookbook-me
 Prerequisites
 ----
 * VirtualBox: <https://www.virtualbox.org/>
-* vagrant 1.2+: <http://www.vagrantup.com/>
+* vagrant 1.4+: <http://www.vagrantup.com/>
 * vagrant plugins
     * [vagrant-omnibus](https://github.com/schisamo/vagrant-omnibus)
           `$ vagrant plugin install vagrant-omnibus`
@@ -20,7 +20,7 @@ Prerequisites
           `$ vagrant plugin install vagrant-berkshelf`
     * [vagrant-hosts](https://github.com/adrienthebo/vagrant-hosts)
           `$ vagrant plugin install vagrant-hosts`
-    * [vagrant-cachier](https://github.com/fgrehm/vagrant-cachier)(optional)
+    * [vagrant-cachier](https://github.com/fgrehm/vagrant-cachier)
           `$ vagrant plugin install vagrant-cachier`
 
 Standalone Environment
@@ -30,12 +30,6 @@ It's so simple! It's time to get a cup of coffee because this may take some time
 
     $ cd standalone
     $ vagrant up
-
-### Mesos cluster in single node.
-just hit these two commands.
-
-        $ vagrant ssh -c 'sudo mesos/build/3rdparty/zookeeper-3.3.4/bin/zkServer.sh start'
-        $ vagrant ssh -c 'mesos-start-cluster.sh'
 
 If everything went well, you can see mesos web UI on: <http://localhost:5050>
 

@@ -52,6 +52,7 @@ Vagrant.configure("2") do |config|
     chef.add_recipe "mysql::server"
     chef.add_recipe "singularity::db_setup"
     chef.add_recipe "singularity::zoo_setup"
+    chef.add_recipe "singularity::start_services"
 
     # You may also specify custom JSON attributes:
     chef.json = {
